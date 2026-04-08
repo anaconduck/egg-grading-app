@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+logs/
+*.log
+
+# Notebook
+.ipynb_checkpoints/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Editor/OS noise
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
