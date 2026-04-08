@@ -172,7 +172,7 @@ if mode == "Single Egg":
     # ==============================
     if input_type == "Upload Image":
         uploaded = st.file_uploader(
-            "",
+            "Make sure the egg is clearly visible and centered in the image.",
             type=["jpg", "jpeg", "png"]
         )
 
@@ -223,7 +223,7 @@ if mode == "Single Egg":
 elif mode == "Egg Tray":
     st.subheader("📊 Egg Tray Analysis")
 
-    uploaded = st.file_uploader("", type=["jpg", "jpeg", "png"])
+    uploaded = st.file_uploader("Make sure the egg is clearly visible and centered in the image.", type=["jpg", "jpeg", "png"])
 
     if uploaded:
         image = Image.open(uploaded)
