@@ -172,7 +172,7 @@ if mode == "Single Egg":
     # ==============================
     if input_type == "Upload Image":
         uploaded = st.file_uploader(
-            "Upload egg image",
+            "",
             type=["jpg", "jpeg", "png"]
         )
 
