@@ -199,7 +199,7 @@ if mode == "Single Egg":
             st.image(image, caption="Input Image", width=250)
 
         with st.spinner("🧠 AI is analyzing..."):
-            time.sleep(2)
+            time.sleep(2.5)
             label, confidence = predict(image)
 
         st.markdown("## 🧠 Classification Result")
