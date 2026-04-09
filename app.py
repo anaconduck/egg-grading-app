@@ -19,10 +19,30 @@ st.set_page_config(page_title="Egg Grading AI", layout="wide")
 
 st.markdown("""
 <style>
+/* Top & bottom spacing */
 .block-container {
     padding-top: 2rem;
+    padding-bottom: 0rem;
 }
 
+/* Full height layout */
+html, body, [data-testid="stAppViewContainer"] {
+    height: 100%;
+}
+
+/* Flex layout */
+[data-testid="stAppViewContainer"] > .main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Push footer ke bawah */
+footer {
+    margin-top: auto;
+}
+
+/* Button style */
 .stButton>button {
     background-color: #ff4b4b;
     color: white;
@@ -32,16 +52,19 @@ st.markdown("""
     font-weight: bold;
 }
 
+/* Upload box */
 .stFileUploader {
     border: 2px dashed #444;
     padding: 20px;
     border-radius: 10px;
 }
 
+/* Text color */
 h1, h2, h3, h4 {
     color: white;
 }
 
+/* Background */
 body {
     background-color: #0E1117;
 }
@@ -281,11 +304,11 @@ elif mode == "Banyak Telur (Tray)":
 st.divider()
 
 st.markdown("""
-<div style="text-align: center; color: gray; font-size: 12px;">
+<div style="text-align: center; color: #888; font-size: 12px; padding-bottom: 10px;">
 © 2026 Egg Grading AI System <br>
-Developed based on: <i>Egg Grading Automation: Quality Classification Based on its External Property (Shell Color) Using ResNet-18</i> <br>
-<a href="https://github.com/putrinahampun/final-project-scAI5" target="_blank" style="color: gray;">
-https://github.com/putrinahampun/final-project-scAI5
+Referensi: <i>Egg Grading Automation: Quality Classification Based on its External Property (Shell Color) Using ResNet-18</i> <br>
+<a href="https://github.com/putrinahampun/final-project-scAI5" target="_blank" style="color: #888;">
+github.com/putrinahampun/final-project-scAI5
 </a>
 </div>
 """, unsafe_allow_html=True)
