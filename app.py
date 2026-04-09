@@ -278,11 +278,9 @@ elif mode == "Banyak Telur (Tray)":
                 for k, v in counter.items():
                     st.write(f"{k}: {v} telur")
 
-st.markdown("<br><br><br>", unsafe_allow_html=True)
+st.divider()
 
 st.markdown("""
-<hr style="border: 0.5px solid #444;">
-
 <div style="text-align: center; color: gray; font-size: 12px;">
 © 2026 Egg Grading AI System <br>
 Developed based on: <i>Egg Grading Automation: Quality Classification Based on its External Property (Shell Color) Using ResNet-18</i> <br>
