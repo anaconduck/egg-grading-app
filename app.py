@@ -215,8 +215,7 @@ if mode == "Telur Tunggal":
 
         elif label == "Grade B":
             st.warning(f"🥈 {label}")
-            st.warning("Kualitas sedang")
-            st.warning("Masa simpan terbatas")
+            st.warning(""" ⚠ Kualitas sedang, Masa simpan terbatas""")
 
         else:
             st.error(f"🥉 {label}")
