@@ -143,11 +143,12 @@ mode = st.sidebar.radio(
 # ==============================
 # 🥚 MAIN TITLE
 # ==============================
-st.title("🥚 Sistem Klasifikasi Kualitas Telur Berdasarkan Warna 🥚")
+st.title("🥚 Sistem Klasifikasi Kualitas Telur")
 st.markdown("Sistem berbasis AI untuk mengklasifikasikan kualitas telur berdasarkan warna menggunakan deep learning.")
 
 st.markdown("""
-This system classifies eggs into:
+Kategori Klasifikasi
+:
 - Grade A (High Quality)
 
 """)
