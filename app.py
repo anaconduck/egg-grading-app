@@ -144,7 +144,7 @@ mode = st.sidebar.radio(
 # 🥚 MAIN TITLE
 # ==============================
 st.title("🥚 Sistem Klasifikasi Kualitas Telur")
-st.markdown("Sistem Berbasis AI Untuk Klasifikasi Kualitas Telur Berdasarkan Warna Menggunakan Deep Learning.")
+st.markdown("Sistem Berbasis AI Untuk Klasifikasi Kualitas Telur Berdasarkan Warna.")
 
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("#### Kategori Klasifikasi:")
