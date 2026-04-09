@@ -208,16 +208,27 @@ if mode == "Telur Tunggal":
         # Badge warna
         if label == "Grade A":
             st.success(f"🥇 {label}")
-            st.info("""✔ High quality egg, Suitable for market""")
+            st.info("""
+        ✔ Kualitas tinggi  
+        ✔ Cocok untuk konsumsi dan penjualan
+        """)
+
         elif label == "Grade B":
             st.warning(f"🥈 {label}")
-            st.warning("""⚠ Medium quality, Limited shelf life""")
+            st.warning("""
+        ⚠ Kualitas sedang  
+        ⚠ Masa simpan terbatas
+        """)
+
         else:
             st.error(f"🥉 {label}")
-            st.error("""❌ Low quality, Not recommended""")
+            st.error("""
+        ❌ Kualitas rendah  
+        ❌ Tidak direkomendasikan
+        """)
 
         st.progress(confidence / 100)
-        st.write(f"Confidence: {confidence:.2f}%")
+        st.write(f"Tingkat Akurasi: {confidence:.2f}%")
 
 
 # ==============================
