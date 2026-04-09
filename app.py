@@ -144,15 +144,10 @@ mode = st.sidebar.radio(
 # 🥚 MAIN TITLE
 # ==============================
 st.title("🥚 Sistem Klasifikasi Kualitas Telur")
-st.markdown("Sistem berbasis AI untuk mengklasifikasikan kualitas telur berdasarkan warna menggunakan deep learning.")
+st.markdown("Sistem Berbasis AI Untuk Klasifikasi Kualitas Telur Berdasarkan Warna Menggunakan Deep Learning.")
 
-st.markdown("""
-Kategori Klasifikasi
-:
-- Grade A (High Quality)
-
-""")
-
+st.markdown("""Kategori Klasifikasi:""")
+st.image("jenis-telur.png", use_container_width=True)
 
 # ==============================
 # 🟢 SINGLE MODE (UPLOAD + CAMERA)
@@ -208,21 +203,15 @@ if mode == "Telur Tunggal":
         # Badge warna
         if label == "Grade A":
             st.success(f"🥇 {label}")
-            st.info("""
-        ✔ Kualitas tinggi  
-        ✔ Cocok untuk konsumsi dan penjualan
-        """)
+            st.info("""✔ Kualitas tinggi, Cocok untuk konsumsi dan penjualan""")
 
         elif label == "Grade B":
             st.warning(f"🥈 {label}")
-            st.warning(""" ⚠ Kualitas sedang, Masa simpan terbatas""")
+            st.warning("""⚠ Kualitas sedang, Masa simpan terbatas""")
 
         else:
             st.error(f"🥉 {label}")
-            st.error("""
-        ❌ Kualitas rendah  
-        ❌ Tidak direkomendasikan
-        """)
+            st.error("""❌ Kualitas rendah, Tidak direkomendasikan""")
 
         st.progress(confidence / 100)
         st.write(f"Tingkat Akurasi: {confidence:.2f}%")
