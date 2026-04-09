@@ -147,7 +147,11 @@ st.title("🥚 Sistem Klasifikasi Kualitas Telur")
 st.markdown("Sistem Berbasis AI Untuk Klasifikasi Kualitas Telur Berdasarkan Warna Menggunakan Deep Learning.")
 
 st.markdown("""Kategori Klasifikasi:""")
+st.markdown("<br>", unsafe_allow_html=True)
+
 st.image("jenis-telur.png",width=500)
+
+st.markdown("<br><br>", unsafe_allow_html=True)
 
 # ==============================
 # 🟢 SINGLE MODE (UPLOAD + CAMERA)
