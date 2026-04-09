@@ -133,36 +133,36 @@ def crop_image(img, rows, cols):
 # ==============================
 # ⚙️ SIDEBAR
 # ==============================
-st.sidebar.title("⚙️ Configuration")
+st.sidebar.title("⚙️ Pengaturan")
 
 mode = st.sidebar.radio(
-    "Select Analysis Mode:",
-    ["Single Egg", "Egg Tray"]
+    "Pilih Mode Analisis:",
+    ["Telur Tunggal", "Banyak Telur (Tray)"]
 )
 
 # ==============================
 # 🥚 MAIN TITLE
 # ==============================
-st.title("🥚 Intelligent Egg Grading System")
-st.markdown("AI-powered egg quality classification using deep learning")
+st.title("🥚 Sistem Klasifikasi Kualitas Telur Berdasarkan Warna 🥚")
+st.markdown("Sistem berbasis AI untuk mengklasifikasikan kualitas telur berdasarkan warna menggunakan deep learning.")
 
 st.markdown("""
 This system classifies eggs into:
 - Grade A (High Quality)
-- Grade B (Medium Quality)
-- Grade C (Low Quality)
+
 """)
+
 
 # ==============================
 # 🟢 SINGLE MODE (UPLOAD + CAMERA)
 # ==============================
-if mode == "Single Egg":
+if mode == "Telur Tunggal":
 
-    st.subheader("📤 Input Egg Image")
+    st.subheader("📤 Masukkan Gambar Telur")
 
     input_type = st.radio(
-        "Choose Input Method:",
-        ["Upload Image", "Use Camera"],
+        "Pilih Metode Input:",
+        ["Unggah Gambar", "Gunakan Kamera"],
         horizontal=True
     )
 
@@ -171,9 +171,9 @@ if mode == "Single Egg":
     # ==============================
     # 📁 UPLOAD MODE
     # ==============================
-    if input_type == "Upload Image":
+    if input_type == "Unggah Gambar":
         uploaded = st.file_uploader(
-            "Make sure the egg is clearly visible and centered in the image.",
+            "Pastikan telur terlihat jelas dan berada di tengah gambar.",
             type=["jpg", "jpeg", "png"]
         )
 
@@ -183,8 +183,8 @@ if mode == "Single Egg":
     # ==============================
     # 📸 CAMERA MODE
     # ==============================
-    elif input_type == "Use Camera":
-        camera_image = st.camera_input("Take a photo")
+    elif input_type == "Gunakan Kamera":
+        camera_image = st.camera_input("Ambil Foto")
 
         if camera_image:
             image = Image.open(camera_image)
@@ -196,13 +196,13 @@ if mode == "Single Egg":
 
         col1, col2, col3 = st.columns([1,2,1])
         with col2:
-            st.image(image, caption="Input Image", width=250)
+            st.image(image, caption="Unggah Gambar", width=250)
 
-        with st.spinner("🧠 AI is analyzing..."):
+        with st.spinner("🧠 Memuat Analisis..."):
             time.sleep(2.5)
             label, confidence = predict(image)
 
-        st.markdown("## 🧠 Classification Result")
+        st.markdown("## 🧠 Hasil Klasifikasi")
 
         # Badge warna
         if label == "Grade A":
@@ -222,10 +222,10 @@ if mode == "Single Egg":
 # ==============================
 # 🟡 MULTIPLE MODE
 # ==============================
-elif mode == "Egg Tray":
-    st.subheader("📊 Egg Tray Analysis")
+elif mode == "Banyak Telur (Tray)":
+    st.subheader("📊 Analisis Tray Telur")
 
-    uploaded = st.file_uploader("Make sure the egg is clearly visible and centered in the image.", type=["jpg", "jpeg", "png"])
+    uploaded = st.file_uploader("Pastikan telur terlihat jelas dan berada di tengah gambar.", type=["jpg", "jpeg", "png"])
 
     if uploaded:
         image = Image.open(uploaded)
@@ -235,8 +235,8 @@ elif mode == "Egg Tray":
             st.image(image, caption="Uploaded Tray", width=300)
 
         st.markdown("### Tray Configuration")
-        row = st.number_input("Number of Rows", min_value=1, step=1)
-        col = st.number_input("Number of Columns", min_value=1, step=1)
+        row = st.number_input("Jumlah Baris", min_value=1, step=1)
+        col = st.number_input("Jumlah Kolom", min_value=1, step=1)
 
         if st.button("🔍 Analyze Tray"):
 
@@ -272,7 +272,7 @@ elif mode == "Egg Tray":
 
                 counter = Counter(results)
 
-                st.markdown("## 📊 Summary")
+                st.markdown("## 📊 Hasil Analisis")
                 for k, v in counter.items():
-                    st.write(f"{k}: {v} eggs")
+                    st.write(f"{k}: {v} telur")
             
