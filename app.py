@@ -146,7 +146,7 @@ mode = st.sidebar.radio(
 st.title("🥚 Sistem Klasifikasi Kualitas Telur")
 st.markdown("Sistem Berbasis AI Untuk Klasifikasi Kualitas Telur Berdasarkan Warna Menggunakan Deep Learning.")
 
-st.markdown("### Kategori Klasifikasi:")
+st.markdown("#### Kategori Klasifikasi:")
 
 st.image("jenis-telur.png",width=500)
 
