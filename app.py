@@ -34,7 +34,7 @@ st.markdown("""
 
 .stFileUploader {
     border: 2px dashed #444;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -143,7 +143,7 @@ mode = st.sidebar.radio(
 # ==============================
 # 🥚 MAIN TITLE
 # ==============================
-st.title("🥚 Sistem Klasifikasi Kualitas Telur")
+st.title("🥚 Sistem Klasifikasi Kualitas Telur 🥚")
 st.markdown("Sistem berbasis AI untuk mengklasifikasikan kualitas telur berdasarkan warna menggunakan deep learning.")
 
 st.markdown("""
