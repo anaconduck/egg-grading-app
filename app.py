@@ -1,4 +1,5 @@
 import io
+import time
 import torch
 import streamlit as st
 import torchvision
@@ -198,6 +199,7 @@ if mode == "Single Egg":
             st.image(image, caption="Input Image", width=250)
 
         with st.spinner("🧠 AI is analyzing..."):
+            time.sleep(1)
             label, confidence = predict(image)
 
         st.markdown("## 🧠 Classification Result")
