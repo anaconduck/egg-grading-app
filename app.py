@@ -172,7 +172,7 @@ st.markdown("Sistem Berbasis AI Untuk Klasifikasi Kualitas Telur Ayam Berdasarka
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("#### Kategori Klasifikasi:")
 
-st.image("jenis-telur.png",width=520)
+st.image("jenis-telur.png",width=515)
 
 st.markdown("<br>", unsafe_allow_html=True)
 
