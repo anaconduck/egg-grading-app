@@ -173,7 +173,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("#### Kategori Klasifikasi:")
 
 #st.image("jenis-telur.png",width=500)
-st.image("jenis-telur2.png",width=500)
+st.image("jenis-telur2.png",width=800)
 
 st.markdown("<br>", unsafe_allow_html=True)
 
