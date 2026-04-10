@@ -306,7 +306,7 @@ st.divider()
 st.markdown("""
 <div style="text-align: center; color: #888; font-size: 12px; padding-bottom: 10px;">
 © 2026 Sistem Klasifikasi Kualitas Telur <br>
-Referensi: <i>Egg Grading Automation: Quality Classification Based on its External Property (Shell Color) Using ResNet-18</i> <br>
+Referensi: <i>Egg Grading Quality Classification Based on its External Property (Shell Color) Using ResNet-18</i> <br>
 <a href="https://github.com/putrinahampun/final-project-scAI5" target="_blank" style="color: #888;">
 github.com/putrinahampun/final-project-scAI5
 </a>
