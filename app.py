@@ -169,12 +169,12 @@ mode = st.sidebar.radio(
 st.title("🥚 Sistem Klasifikasi Kualitas Telur")
 st.markdown("Sistem Berbasis AI Untuk Klasifikasi Kualitas Telur Berdasarkan Warna.")
 
-st.markdown("<div style='margin-top:10px;'></div>", unsafe_allow_html=True)
+st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("#### Kategori Klasifikasi:")
 
 st.image("jenis-telur.png",width=500)
 
-st.markdown("<div style='margin-top:10px;'></div>", unsafe_allow_html=True)
+st.markdown("<br>", unsafe_allow_html=True)
 
 # ==============================
 # 🟢 SINGLE MODE (UPLOAD + CAMERA)
