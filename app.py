@@ -288,7 +288,7 @@ html, body {{
 }}
 
 .section-title {{
-    font-size: 1.2rem !important; /* Diperbesar sesuai permintaan */
+    font-size: 1.1rem !important; /* Diperbesar sesuai permintaan */
     font-weight: 800 !important;
     color: #3d7a1b !important;
     margin: 0 0 16px 0 !important;
