@@ -238,6 +238,11 @@ html, body {{
     height: fit-content;
 }}
 
+/* Beri jarak ekstra di atas khusus untuk judul Panduan Kategori Telur */
+.category-section .section-title {{
+    margin-top: 12px !important;
+}}
+
 /* category image: centered, no distortion */
 .category-section img {{
     display: block;
