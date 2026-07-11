@@ -240,7 +240,7 @@ html, body {{
 
 /* Beri jarak ekstra di atas khusus untuk judul Panduan Kategori Telur */
 .category-section .section-title {{
-    margin-top: 8px !important;
+    margin-top: 6px !important;
 }}
 
 /* category image: centered, no distortion */
