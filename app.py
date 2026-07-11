@@ -37,7 +37,7 @@ def get_base64_image(path):
     except Exception:
         return None
 
-bg_path = Path(__file__).parent / "farm_bg.png"
+bg_path = Path(__file__).parent / "Assets" / "farm_bg.png"
 bg_b64 = get_base64_image(str(bg_path))
 bg_css = f"url('data:image/png;base64,{bg_b64}')" if bg_b64 else "linear-gradient(135deg, #78c843 0%, #4a9b30 100%)"
 
@@ -147,10 +147,10 @@ html, body {{
     border-bottom: 5px solid #e8a020;
     /* Full-width escape from any container */
     position: relative;
-    width: 100vw;
+    width: 110vw; /* Slightly wider to prevent scrollbar/sub-pixel gaps on the right */
     left: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: -55vw;
+    margin-right: -55vw;
     box-sizing: border-box;
 }}
 
@@ -242,7 +242,7 @@ html, body {{
 .category-section img {{
     display: block;
     width: 100%;
-    max-width: 650px;
+    max-width: 750px;
     height: auto;
     object-fit: contain;
     border-radius: 10px;
@@ -334,7 +334,8 @@ html, body {{
 }}
 
 /* ── TABS ── */
-.stTabs [data-baseweb="tab-list"] {{
+.stTabs [data-baseweb="tab-list"],
+.stTabs [role="tablist"] {{
     gap: 8px;
     background: rgba(255,255,255,0.92);
     border-radius: 16px;
@@ -342,7 +343,9 @@ html, body {{
     box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }}
 
-.stTabs [data-baseweb="tab"] {{
+.stTabs [data-baseweb="tab"],
+.stTabs button[role="tab"],
+.stTabs [role="tab"] {{
     border-radius: 12px;
     padding: 12px 20px;
     font-weight: 700;
@@ -550,10 +553,10 @@ html, body {{
     margin-top: 32px;
     /* Full-width escape — same technique as hero banner */
     position: relative;
-    width: 100vw;
+    width: 110vw; /* Slightly wider to prevent gaps on the right */
     left: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: -55vw;
+    margin-right: -55vw;
     box-sizing: border-box;
     /* Visual bleed to cover any small gaps at the very bottom */
     box-shadow: 0 40px 0 0 #2d5a0e;
@@ -583,9 +586,8 @@ html, body {{
     .content-wrapper {{ padding: 16px 12px 0; }}
     .category-section {{ padding: 12px; margin-bottom: 16px; }}
     .grade-row {{ gap: 6px; }}
-    .grade-badge {{ min-width: 60px; font-size: 0.82rem; }}
-    .input-card {{ padding: 16px 14px; margin: 12px 0; }}
-    .stTabs [data-baseweb="tab"] {{ padding: 10px 12px; font-size: 0.9rem; }}
+    .grade-badge {{ font-size: 0.85rem; padding: 8px 4px; min-width: 60px; }}
+    .stTabs [data-baseweb="tab"], .stTabs button[role="tab"], .stTabs [role="tab"] {{ padding: 10px 12px; font-size: 0.9rem; }}
     .result-grade-label {{ font-size: 2.4rem; }}
     .step-row {{ margin-bottom: 10px; }}
     .custom-footer {{ margin-top: 24px; padding: 20px 16px 12px; }}
@@ -732,7 +734,7 @@ st.markdown("""
 st.markdown('<div class="content-wrapper">', unsafe_allow_html=True)
 
 # ── Kategori Telur Section ──
-img_path = Path(__file__).parent / "jenis-telur.png"
+img_path = Path(__file__).parent / "Assets" / "jenis-telur.png"
 if img_path.exists():
     ref_img = Image.open(img_path)
     buf = io.BytesIO()
