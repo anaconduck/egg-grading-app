@@ -276,13 +276,13 @@ html, body {{
     text-align: center;
 }}
 
-/* ── INPUT CARD (native Streamlit container) ── */
-/* Styled via data-testid targeting so no broken div-wrap needed */
-[data-testid="stVerticalBlock"] > [data-testid="stVerticalBlock"].input-card-container {{
+/* ── INPUT CARD (Tab Panels) ── */
+.stTabs [data-baseweb="tab-panel"],
+.stTabs [role="tabpanel"] {{
     background: rgba(255,255,255,0.92);
     border-radius: 20px;
-    padding: 20px !important;
-    margin: 16px 0 !important;
+    padding: 24px !important;
+    margin-top: 16px !important;
     box-shadow: 0 4px 20px rgba(0,0,0,0.12);
     border: 2px solid rgba(255,255,255,0.7);
 }}
