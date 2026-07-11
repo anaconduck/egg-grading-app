@@ -240,7 +240,7 @@ html, body {{
 
 /* Beri jarak ekstra di atas khusus untuk judul Panduan Kategori Telur */
 .category-section .section-title {{
-    margin-top: 12px !important;
+    margin-top: 10px !important;
 }}
 
 /* category image: centered, no distortion */
@@ -287,7 +287,7 @@ html, body {{
     background: rgba(255,255,255,0.92);
     border-radius: 20px;
     padding: 24px !important;
-    margin-top: 8px !important; /* Jarak antara tombol tab dan kotak putih dikurangi */
+    margin-top: 16px !important; /* Celah antara tombol tab dan card box */
     box-shadow: 0 4px 20px rgba(0,0,0,0.12);
     border: 2px solid rgba(255,255,255,0.7);
 }}
