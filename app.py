@@ -483,14 +483,15 @@ html, body {{
 .result-desc {{
     font-size: 1.05rem;
     font-weight: 600;
-    margin-top: 8px;
+    margin-top: 18px !important;
+    margin-bottom: 20px !important;
     color: #444;
 }}
 
 .result-accuracy {{
     font-size: 0.95rem;
     color: #666;
-    margin-top: 10px;
+    margin-top: 16px !important;
     font-weight: 600;
 }}
 
@@ -552,6 +553,10 @@ html, body {{
     font-weight: 700;
     font-size: 1.1rem;
 }}
+
+.tray-result-item.result-card-a {{ color: #1a5c2a !important; }}
+.tray-result-item.result-card-b {{ color: #7d5a00 !important; }}
+.tray-result-item.result-card-c {{ color: #721c24 !important; }}
 
 /* ── FOOTER ── */
 .custom-footer {{
