@@ -20,7 +20,7 @@ from matplotlib import pyplot as plt
 # 🎨 PAGE CONFIG
 # ==============================
 st.set_page_config(
-    page_title="Cek Kualitas Telur 🥚",
+    page_title="Egg Grading App 🥚",
     layout="wide",
     page_icon="🥚",
     initial_sidebar_state="collapsed"
@@ -702,17 +702,17 @@ def render_result_card(label, confidence):
         card_class = "result-card-a"
         grade_class = "result-grade-a"
         emoji = "🥇"
-        desc = "Telur Kualitas Sangat Bagus! Aman untuk dijual & dikonsumsi."
+        desc = "<strong>Kualitas Premium (Sangat Bagus).</strong> Cangkang tebal, bersih, dan utuh. Sangat ideal untuk dijual dengan harga tinggi ke supermarket, swalayan, atau digunakan untuk penetasan bibit unggul. Masa simpan sangat panjang dan optimal."
     elif label == "Grade B":
         card_class = "result-card-b"
         grade_class = "result-grade-b"
         emoji = "🥈"
-        desc = "Kualitas Cukup Bagus. Segera dijual, masa simpan lebih pendek."
+        desc = "<strong>Kualitas Standar (Bagus).</strong> Kondisi cangkang normal, sangat layak jual untuk konsumsi rumah tangga harian, warung, atau pasar tradisional. Disarankan untuk lebih dulu dipasarkan karena masa simpannya sedikit lebih pendek dari Grade A."
     else:
         card_class = "result-card-c"
         grade_class = "result-grade-c"
         emoji = "🥉"
-        desc = "Kualitas Kurang Bagus. Sebaiknya dipisahkan dari yang lain."
+        desc = "<strong>Kualitas Rendah (Kurang Bagus).</strong> Cangkang tipis, retak halus, kotor, atau bentuk tidak normal. Sangat rawan pecah dan lebih cepat rusak. Segera pisahkan dari yang lain! Cocok dijual miring/murah untuk industri makanan (pembuatan kue/roti) atau diafkir."
 
     st.markdown(f"""
     <div class="result-card {card_class}">
