@@ -362,8 +362,7 @@ html, body {{
 
 /* ── HIDE DEFAULT STREAMLIT RED INDICATOR LINE ── */
 .stTabs [data-baseweb="tab-highlight"],
-.stTabs [role="tablist"] > div {{
-    background-color: transparent !important;
+[data-testid="stTabIndicator"] {{
     display: none !important;
 }}
 
