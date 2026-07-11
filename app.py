@@ -282,7 +282,7 @@ html, body {{
     background: rgba(255,255,255,0.92);
     border-radius: 20px;
     padding: 24px !important;
-    margin-top: 16px !important;
+    margin-top: 8px !important; /* Jarak antara tombol tab dan kotak putih dikurangi */
     box-shadow: 0 4px 20px rgba(0,0,0,0.12);
     border: 2px solid rgba(255,255,255,0.7);
 }}
@@ -774,7 +774,7 @@ tab_single, tab_tray = st.tabs(["🥚 Telur Tunggal", "📦 Sepapan Telur (Tray)
 with tab_single:
 
     st.markdown("""
-    <div class="step-row" style="margin-top:16px;">
+    <div class="step-row" style="margin-top:0px;">
         <span class="step-label">1</span>
         <p class="step-text">Pilih cara ambil gambar telur</p>
     </div>
@@ -856,7 +856,7 @@ with tab_tray:
 
     # ── Upload (no card box — plain step row + uploader) ──
     st.markdown("""
-    <div class="step-row" style="margin-top:16px;">
+    <div class="step-row" style="margin-top:0px;">
         <span class="step-label">1</span>
         <p class="step-text">Upload foto sepapan telur (tray)</p>
     </div>
