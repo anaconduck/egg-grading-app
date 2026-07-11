@@ -2,8 +2,6 @@
 
 Aplikasi pintar berbasis **Kecerdasan Buatan (AI)** yang dirancang untuk mengklasifikasikan kualitas telur ayam ke dalam **Grade A, Grade B, atau Grade C** secara otomatis melalui unggahan gambar. Aplikasi ini sangat berguna bagi peternak, pedagang pasar, maupun konsumen untuk memastikan kualitas telur secara objektif dan cepat.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://egg-grading-app29.streamlit.app/)
-
 ## 🚀 Live Demo
 Cobalah aplikasi ini secara langsung tanpa perlu instalasi!
 🔗 **[Buka Aplikasi di Streamlit Cloud](https://egg-grading-app29.streamlit.app/)**
