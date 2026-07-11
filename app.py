@@ -242,7 +242,7 @@ html, body {{
 .category-section img {{
     display: block;
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
     height: auto;
     object-fit: contain;
     border-radius: 10px;
@@ -288,10 +288,10 @@ html, body {{
 }}
 
 .section-title {{
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: #3d7a1b;
-    margin: 0 0 12px 0;
+    font-size: 1.2rem !important; /* Diperbesar sesuai permintaan */
+    font-weight: 800 !important;
+    color: #3d7a1b !important;
+    margin: 0 0 16px 0 !important;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -358,6 +358,13 @@ html, body {{
 .stTabs [aria-selected="true"] {{
     background: #e8a020 !important;
     color: white !important;
+}}
+
+/* ── HIDE DEFAULT STREAMLIT RED INDICATOR LINE ── */
+.stTabs [data-baseweb="tab-highlight"],
+.stTabs [role="tablist"] > div {{
+    background-color: transparent !important;
+    display: none !important;
 }}
 
 /* ── CARD SECTIONS inside tabs ── */
