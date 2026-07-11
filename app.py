@@ -230,7 +230,7 @@ html, body {{
     border-radius: 20px;
     padding: 16px;
     /* top margin creates visual gap after hero banner */
-    margin-top: 24px;
+    margin-top: 30px;
     margin-bottom: 32px;
     box-shadow: 0 6px 28px rgba(0,0,0,0.18);
     border: 2px solid #e8f5e1;
